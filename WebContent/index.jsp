@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Title of the page</title>
-<meta name="keywords" content="Keywords" />
-<meta name="description" content="Description of the page." />
-<meta name="robots" content="index,follow" />
+<title>Regioni italiane</title>
+
 <script language="JavaScript" type="text/JavaScript">
 
 </script>
+
 </head>
 
 <body
@@ -21,14 +20,10 @@
 			'imgRegioni/Lazio.png','imgRegioni/Abruzzo.png','imgRegioni/Campania.png',
 			'imgRegioni/Puglia.png','imgRegioni/Calabria.png','imgRegioni/Sicilia.png',
 			'imgRegioni/Sardegna.png')">
-	<div class="mappa">
+	<h1 style="text-align:center;padding-top:2%;">Seleziona una regione!</h1>
 	
-	<%/*
-     RequestDispatcher rd = request.getRequestDispatcher("/prendiInfo");
-     request.setAttribute("regione","HI Welcome");
-     rd.forward(request, response);*/
-	%>
 	
+	<div class="mappa" style="padding-left:33.3%;padding-top:3%;">
 		<img id="mappaitalia" usemap="#Map" src="imgRegioni/cartina_italia.png"
 			name="Italia" />
 		<map id="Map" name="Map">

@@ -36,6 +36,9 @@ public class PrendiInfo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String regioneCliccata = request.getParameter("regione");
+		
+		
+		
 	/*
 		        try {
 		            response.setContentType("text/html");
