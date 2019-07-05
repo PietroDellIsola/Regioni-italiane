@@ -2,7 +2,6 @@ package ricerca.servlet;
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +13,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
 
 /**
  * Servlet implementation class prendiInfo
@@ -37,9 +37,26 @@ public class PrendiInfo extends HttpServlet {
 		// TODO Auto-generated method stub
 		String regioneCliccata = request.getParameter("regione");
 		
+		//Scarico la pagina
+		Document doc = Jsoup.connect("https://www.tuttitalia.it/"+regioneCliccata).get();
 		
+		//prendo la prima tabella dalla pagina scaricata in precedenza
+		Elements tabelle = doc.getElementsByTag("table");
 		
-	/*
+		/*Scaricare anche il div in alto con classe "ye"*/
+		
+		/*tabelle che servono:
+		 * class = "ut", in posizione 7 
+		 * senza classe(è in un div), in posizione 8 
+		 * */
+		
+		int i = 0;
+		for(Element t : tabelle) {
+			System.out.println("TABELLA "+i+"\n"+t);
+			i++;
+		}
+		
+		/*
 		        try {
 		            response.setContentType("text/html");
 		            PrintWriter writer = response.getWriter();
@@ -58,7 +75,8 @@ public class PrendiInfo extends HttpServlet {
 		    }
 		   
 		*/
-		System.out.print("dentro servlet "+regioneCliccata);
+		
+		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
