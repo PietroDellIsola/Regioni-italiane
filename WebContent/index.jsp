@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Regioni italiane</title>
 
 <script language="JavaScript" type="text/JavaScript">
@@ -12,14 +11,7 @@
 
 </head>
 
-<body
-	onLoad="fd_preloadImages('imgRegioni/Aosta.png','imgRegioni/Piemonte.png','imgRegioni/Lombardia.png',
-			'imgRegioni/Trentino.png','imgRegioni/Veneto.png','imgRegioni/Friuli.png',
-			'imgRegioni/Liguria.png','imgRegioni/Emilia.png','imgRegioni/Toscana.png',
-			'imgRegioni/Marche.png','imgRegioni/Umbria.png','imgRegioni/Molise.png',
-			'imgRegioni/Lazio.png','imgRegioni/Abruzzo.png','imgRegioni/Campania.png',
-			'imgRegioni/Puglia.png','imgRegioni/Calabria.png','imgRegioni/Sicilia.png',
-			'imgRegioni/Sardegna.png')">
+<body>
 	<h1 style="text-align:center;padding-top:2%;">Seleziona una regione!</h1>
 	
 	
