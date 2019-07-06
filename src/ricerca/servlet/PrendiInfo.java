@@ -94,7 +94,7 @@ public class PrendiInfo extends HttpServlet {
 		nomeCapoluogostr = nomeCapoluogostr.substring(0,nomeCapoluogostr.indexOf(" "));
 		JSONObject nomeCapoluogo = new JSONObject();
 		nomeCapoluogo.put("nomeCapoluogo", nomeCapoluogostr);
-		jsonArray.put(nomeCapoluogostr);
+		jsonArray.put(nomeCapoluogo);
 		//risultato.setNomeCapoluogo(nomeCapoluogostr);
 		
 		/*tabella province*/
