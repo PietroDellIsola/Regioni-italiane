@@ -3,19 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="indexStyle.css" rel="stylesheet" type="text/css">
 <title>Regioni italiane</title>
-
-<script language="JavaScript" type="text/JavaScript">
-
-</script>
-
 </head>
 
 <body>
-	<h1 style="text-align:center;padding-top:2%;">Seleziona una regione!</h1>
+	<h1 id="titoloPrincipale">Seleziona una regione!</h1>
 	
-	
-	<div class="mappa" style="padding-left:33.3%;padding-top:3%;">
+	<div class="mappa">
 		<img id="mappaitalia" usemap="#Map" src="imgRegioni/cartina_italia.png"
 			name="Italia" />
 		<map id="Map" name="Map">

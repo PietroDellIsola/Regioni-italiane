@@ -5,32 +5,30 @@
 <head>
 <meta charset="ISO-8859-1">
 <title></title>
-
+<link href="risultatoStyle.css" rel="stylesheet" type="text/css">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
-
 </head>
 <body>
 	<br>
 	<div>
-		<span style="width: 20%"> <img id="stemma" src=""
-			style="float: right; padding-right: 4%;" alt="Stemma della regione"
-			height="100" width="93">
+		<span id="spanStemma"> 
+			<img id="stemma" src="" alt="Stemma della regione" height="100" width="93">
 		</span>
 
-		<div style="padding-left: 15%;">
-			<h1 id="titolo" style="text-align: center; color: blue; width: 80%;"></h1>
+		<div id="divTitolo">
+			<h1 id="titolo"></h1>
 
-			<h3 id="capoluogo"
-				style="text-align: center; color: green; width: 80%;"></h3>
+			<h3 id="capoluogo"></h3>
 		</div>
 	</div>
 	<br>
-	<div id="province"
-		style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto">
+	<div id="province">
 	</div>
+	<br><br><br>
+	<button id="bottoneRitorna" onclick="window.location.href='index.jsp'">Torna alla home</button>
 
 	<script type="text/javascript">
 		var arrayProvince = [];
@@ -67,12 +65,13 @@
 			var totPopolazione = myVar[myVar.length - 1];
 			totPopolazione = totPopolazione["totalePopolazione"];
 
-			/*modifico il titolo della pagina*/
+			/*modifico il capoluogo della pagina*/
 			var c = document.getElementById("capoluogo");
 			c.innerHTML = "Capoluogo: " + capoluogo;
-			/*modifico il capoluogo della pagina*/
+			/*modifico il titolo della pagina*/
 			var t = document.getElementById("titolo");
 			t.innerHTML = nomeRegione;
+			document.title = nomeRegione;
 			/*aggiungo indirizzo per lo stemma della regione all'immagine*/
 			var img = document.getElementById("stemma");
 			img.src = urlStemma;

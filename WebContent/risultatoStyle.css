@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+#spanStemma
+{
+	width: 20%;	
+}
+
+#stemma
+{
+	float: right; 
+	padding-right: 4%;
+}
+
+#divTitolo
+{
+	padding-left: 15%;
+}
+
+#titolo
+{
+	text-align: center; 
+	color: blue; 
+	width: 80%;
+}
+
+#capoluogo
+{
+	text-align: center; 
+	color: green; 
+	width: 80%;
+}
+
+#province
+{
+	min-width: 310px; 
+	height: 400px; 
+	max-width: 600px; 
+	margin: 0 auto;
+}
+
+#bottoneRitorna
+{
+	float:right;
+	margin-right:10%;
+	padding:1%;
+}
